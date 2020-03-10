@@ -35,7 +35,7 @@ namespace ChallengeSets
 
         public string GetHey()
         {
-            throw new NotImplementedException();
+            return "HEY!";
         }
     }
 }
