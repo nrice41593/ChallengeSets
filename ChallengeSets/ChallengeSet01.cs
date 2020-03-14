@@ -38,12 +38,13 @@ namespace ChallengeSets
 
         public long Multiply(long factor1, long factor2)
         {
-            throw new NotImplementedException();
+            var sum = factor1 * factor2;
+            return sum;
         }
 
         public string GetGreeting(string nameOfPerson)
         {
-            throw new NotImplementedException();
+                        
         }
 
         public string GetHey()
