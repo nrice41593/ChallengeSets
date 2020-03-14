@@ -9,12 +9,13 @@ namespace ChallengeSets
             {
                 return true;
             }
-            else return false;
+            else return false; 
         }
 
         public double Subtract(double minuend, double subtrahend)
         {
-            throw new NotImplementedException();
+            double sum = (minuend - subtrahend);
+            return sum;
         }
 
         public int Add(int number1, int number2)
