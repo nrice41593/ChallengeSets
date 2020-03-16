@@ -44,6 +44,15 @@ namespace ChallengeSets
 
         public string GetGreeting(string nameOfPerson)
         {
+            if(nameOfPerson == "")
+            {
+                return "Hello!";
+            }
+            else
+            {
+                var name = "Hello" + ", " + nameOfPerson + "!";
+                return name;
+            }
                         
         }
 
