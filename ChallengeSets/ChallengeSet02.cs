@@ -85,27 +85,41 @@ namespace ChallengeSets
         }
 
         public int SumEvens(int[] numbers)
-        {           
+        {
+            var evenSteven = new List<int>();
             if(numbers == null)
             {
                 return 0;
             }
-            for(int even = 0; numbers.Length % 2 == 0; even++)
+            foreach(var num in numbers)
             {
-               foreach(var  num in numbers)
+                if(num % 2 == 0)
                 {
-                    return num;
-                } 
-            }
-             
+                    evenSteven.Add(num);
+                }
+            }            
            
-            return numbers.Sum();
+            return evenSteven.Sum();
         }
 
         public bool IsSumOdd(List<int> numbers)
         {
-            throw new NotImplementedException();
+            var oddBodd = new List<int>();
+            if(numbers == null)
+            {
+                return false;
+            }
+            foreach(var odd in numbers)
+            {
+                if(odd % 2 != 0)
+                {
+                    oddBodd.Add(odd);
+                }
+            }
+            return false;
+            
         }
+
 
         public long CountOfPositiveOddsBelowNumber(long number)
         {
