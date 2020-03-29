@@ -109,14 +109,7 @@ namespace ChallengeSets
             {
                 return false;
             }
-            foreach(var odd in numbers)
-            {
-                if(odd % 2 != 0)
-                {
-                    oddBodd.Add(odd);
-                }
-            }
-            return false;
+            return numbers.Sum() % 2 != 0;           
             
         }
 
