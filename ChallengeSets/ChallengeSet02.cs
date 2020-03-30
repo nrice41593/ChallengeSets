@@ -103,8 +103,7 @@ namespace ChallengeSets
         }
 
         public bool IsSumOdd(List<int> numbers)
-        {
-            var oddBodd = new List<int>();
+        {          
             if(numbers == null)
             {
                 return false;
@@ -116,7 +115,18 @@ namespace ChallengeSets
 
         public long CountOfPositiveOddsBelowNumber(long number)
         {
-            throw new NotImplementedException();
+            var counter = 0;
+            for(int i = 0; i < number; i++)
+            {
+                if(i % 2 != 0)
+                {
+                    counter++;
+                }
+            }
+                return counter;
+            
+            
+
         }
     }
 }
