@@ -41,14 +41,36 @@ namespace ChallengeSets
                                
             }
             return (sum % 2 != 0); 
-        }
-       
-           
-        
+        }         
 
         public bool PasswordContainsUpperLowerAndNumber(string password)
         {
-            throw new NotImplementedException();
+            var containsUpper = false;
+            var containsLower = false;
+            var containsNumber = false;
+            for(int i =0; i < password.Length; i++)
+            {
+                if (char.IsUpper(password[i]))
+                {
+                    containsUpper = true;
+                }
+                if (char.IsLower(password[i]))
+                {
+                    containsLower = true; 
+                }
+                if (char.IsNumber(password[i]))
+                {
+                    containsNumber = true;
+                }
+            }
+                if(containsNumber && containsLower && containsUpper)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
         }
 
         public char GetFirstLetterOfString(string val)
