@@ -95,16 +95,28 @@ namespace ChallengeSets
 
         public int LastMinusFirst(int[] nums)
         {
-            throw new NotImplementedException();
+            return nums[nums.Length - 1] - nums[0];
         }
         public int[] GetOddsBelow100()
         {
-            throw new NotImplementedException();
+            var list = new List<int>();
+            for(int i = 0; i < 100; i++)
+            {
+                if(i % 2 != 0)
+                {
+                    list.Add(i);
+                }
+            }
+            return list.ToArray();
         }
 
+
         public void ChangeAllElementsToUppercase(string[] words)
-        {
-            throw new NotImplementedException();
+        {            
+            for(int i = 0; i < words.Length; i++)
+            {
+                words[i] = words[i].ToUpper();
+            }
         }
     }
 }
