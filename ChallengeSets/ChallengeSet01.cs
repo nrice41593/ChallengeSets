@@ -5,32 +5,41 @@ namespace ChallengeSets
     {
         public bool AreTwoNumbersTheSame(int num1, int num2)
         {
-            throw new NotImplementedException();
+            return num1 == num2;
         }
 
         public double Subtract(double minuend, double subtrahend)
         {
-            throw new NotImplementedException();
+            return  (minuend- subtrahend);
         }
 
         public int Add(int number1, int number2)
         {
-            throw new NotImplementedException();
+            return  number1 +  number2;
         }
 
         public int GetSmallestNumber(int number1, int number2)
         {
-            throw new NotImplementedException();
+            if (number1 < number2)
+            {
+                return number1;
+            }
+            return number2;
         }
 
         public long Multiply(long factor1, long factor2)
         {
-            throw new NotImplementedException();
+            return factor1 * factor2;
         }
 
         public string GetGreeting(string nameOfPerson)
         {
-            throw new NotImplementedException();
+            string greeting = $"Hello, {nameOfPerson}!";
+            if (nameOfPerson == "")
+            {
+                return "Hello!";
+            }
+            return greeting;
         }
 
         public string GetHey()
@@ -39,3 +48,4 @@ namespace ChallengeSets
         }
     }
 }
+//find pad on visual study
